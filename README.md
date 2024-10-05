@@ -3,8 +3,13 @@ Proyecto enfocado en la transición energética, hacia energías limpias, dejand
 
 ## Integrantes del Proyecto
 -Richard Jiménez Guerrero
+
 -Jorge Armando Rizo (líder)
+
 -Fabian Meneses
+
 -José Daniel Giraldo Parra
+
 -Estefania Hurtado Ospina
+
 -Valeria...
