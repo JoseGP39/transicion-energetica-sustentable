@@ -77,3 +77,84 @@
 .overlay p {
     font-size: 1.2rem; /* Tamaño del párrafo */
 }
+
+
+.footer {
+    background-color: #1d7006; 
+    color: white; 
+    padding: 40px 0;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 0 50px; 
+}
+
+.footer-section {
+    flex: 1 1 200px; 
+    margin: 20px 0; 
+}
+
+.footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0e6acc; 
+    padding-bottom: 5px;
+}
+
+.footer p, .footer ul {
+    font-size: 0.9rem; 
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;   
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #007bff; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444; 
+    font-size: 0.8rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #aaa;
+}
+
+
+.social-media {
+    display: flex;
+    gap: 15px; 
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.social-media li a img {
+    width: 30px; 
+    transition: transform 0.3s ease;
+}
+
+.social-media li a img:hover {
+    transform: scale(1.2); 
+}
