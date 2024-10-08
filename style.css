@@ -12,6 +12,7 @@
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
+    margin-bottom: 20px;
 }
 
 /* Navigation styles */
@@ -40,42 +41,164 @@
     color: #007bff;
 }
 
+/*Aqui estaban estilos del fondo que estaba antes*/
+/*Empiezo con cambios en esta area del body*/
 
 
-#fondoprincipal img {
-    max-height: 500px; /* Limita la altura de la imagen */
-    width: 100%; /* Asegura que ocupe el 100% del ancho */
+/*probando slider Daniel 2*/
+/* .slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
 }
-
-.image-container {
-    position: relative; /* Hace que el contenedor padre sea relativo */
-}
-
-.image-container img {
+.slide-inner {
+    position: relative;
+    overflow: hidden;
     width: 100%;
+    height: calc( 300px + 3em);
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+    display: block;
     height: auto;
+    max-width: 100%;
+}
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+         -1px 0px 2px rgba(255, 255, 255, 0);
+}
+ */
+
+
+/*Estilos prueba dos */
+.slider {
+	width: 95%;
+    max-height: 400px; /*aplico una altura maxima*/
+	margin: auto;
+	overflow: hidden; /*con nesto evito que la imagen se desborde*/
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(200, 3, 250, 0.8); /*aplico una sombra con una opacidad*/
 }
 
-.overlay {
-    position: absolute; /* Posiciona el contenido de manera absoluta sobre la imagen */
-    top: 50%; /* Posiciona verticalmente en el centro */
-    left: 50%; /* Posiciona horizontalmente en el centro */
-    transform: translate(-50%, -50%); /* Ajuste para centrar el contenido */
-    color: white; /* Color del texto */
-    text-align: center; /* Centra el texto */
-   /* background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar legibilidad */
-    padding: 20px;
-    width: 80%; /* Ajusta el ancho del texto según sea necesario */
-    border-radius: 10px; /* Opcional, para bordes redondeados */
+.slider ul {
+	display: flex; /*pongo los elementos flexibles dentro del contenedor en este caso los "li"*/
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 8s infinite alternate linear; /*aqui aplico una animacion de en tiempo de segundos*/
 }
 
-.overlay h1 {
-    font-size: 2.5rem; /* Tamaño del título */
-    margin-bottom: 10px;
+.slider li {
+	width: 100%;
+	list-style: none; /*quito los puntos a la lista*/
 }
+
+.slider img {
+	width: 100%; 
+    object-fit: cover; /*ajusto la imagen al contenedor sin que pierda propiedades*/
+}
+
 
 .overlay p {
     font-size: 1.2rem; /* Tamaño del párrafo */
+}
+
+@keyframes cambio { /*Se utliza una animacion, especificando los cambios movendo el contenido en el eje horizontal*/
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
 
 
@@ -83,6 +206,8 @@
     background-color: #1d7006; 
     color: white; 
     padding: 40px 0;
+
+    margin-top: 20px;
 }
 
 .footer .container {
@@ -90,6 +215,7 @@
     flex-wrap: wrap; 
     justify-content: space-between; 
     padding: 0 50px; 
+
 }
 
 .footer-section {
@@ -139,7 +265,6 @@
     margin: 0;
     color: #aaa;
 }
-
 
 .social-media {
     display: flex;
