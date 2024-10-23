@@ -72,6 +72,10 @@ body{
     background: #2fb4cc;
     color: #fff;
 }
+
+.video_capacitacion{
+    text-align: center;
+}
 /************************************************************ Hasta aca. CSS de la pagina de cursos - Jorge*/
 
 /* Flexbox-like behavior for header content */
