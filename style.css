@@ -12,6 +12,8 @@ body{
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -75,6 +77,8 @@ body{
 }
 
 .video_capacitacion{
+    margin-top: 100px; /*Agrego espacio para que el video se separe del header*/
+    min-height: 350px; 
     text-align: center;
 }
 /************************************************************ Hasta aca. CSS de la pagina de cursos - Jorge*/
@@ -82,11 +86,18 @@ body{
 /* Flexbox-like behavior for header content */
 .header-content {
     display: flex;
+    min-width: 100%; /* Agrego un ancho al Header*/
+    background-color: #fff;
    /* justify-content: space-between;*/
     align-items: center;
+    top: 0;
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: 20px;
+    position: fixed; /* Fijo el Header para que el contenido deslice por debajo*/
+    z-index: 1000;
+    
+    height: 80px;
 }
 
 /* Navigation styles */
@@ -129,6 +140,7 @@ body{
 	width: 95%;
     max-height: 400px; /*aplico una altura maxima*/
 	margin: auto;
+    margin-top: 110px; /*Agrego un margen para que el slider tenga un espacio de margen arriba*/
 	overflow: hidden; /*con nesto evito que la imagen se desborde*/
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(200, 3, 250, 0.8); /*aplico una sombra con una opacidad*/
@@ -176,7 +188,7 @@ body{
     text-align: center;
     font-size: 2em;
     color: #3f3f9e; /* Color similar al de tu imagen */
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .card-container {
@@ -185,6 +197,7 @@ body{
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 20px;
+    margin-top: 30px;
 }
 
 .card {
