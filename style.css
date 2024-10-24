@@ -78,7 +78,7 @@ body{
 
 .video_capacitacion{
     margin-top: 100px; /*Agrego espacio para que el video se separe del header*/
-    min-height: 350px;
+    min-height: 350px; 
     text-align: center;
 }
 /************************************************************ Hasta aca. CSS de la pagina de cursos - Jorge*/
