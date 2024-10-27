@@ -12,3 +12,5 @@ Proyecto enfocado en la transición energética, hacia energías limpias, dejand
 
 -Estefania Hurtado Ospina
 
+-Yuli Vidal
+
