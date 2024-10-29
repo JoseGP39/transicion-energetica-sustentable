@@ -17,7 +17,7 @@ body {
     z-index: 1000; /* Para asegurarnos de que el header quede por encima del contenido */
     background-color: white; /* El fondo blanco para evitar que se nos vea el contenido detrás*/
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Aplico una sombrita, es opcional para dar algo de profundidad */
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
@@ -31,6 +31,9 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Individual nav items */
