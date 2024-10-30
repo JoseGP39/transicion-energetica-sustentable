@@ -1,259 +1,102 @@
-/* General styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Contenedor principal */
+  
+  
+  /* Selectores de Mes y Año */
+    .container-fluid{
+        margin-top: 150px;
+        justify-items:center;
+    }
 
-body {
-    margin-top: 126px; /* Ajusta el valor según la altura del header */
-}
-/* Flexbox-like behavior for header content */
-.header-content {
-    position: fixed; /*Con esta propiedad dejamos fijo el contenedor principal del header*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Para asegurarnos de que el header quede por encima del contenido */
-    background-color: white; /* El fondo blanco para evitar que se nos vea el contenido detrás*/
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); /* Aplico una sombrita, es opcional para dar algo de profundidad */
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px; /*Aaplique un poco de relleno arriba = top*/
-    padding-bottom: 20px; /*Aaplique un poco de relleno abajo = bottom*/
-    display:flex;
-  }
-
-/* Navigation styles */
-.nav {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-/* Individual nav items */
-.nav-item {
+  #months, #years {
     display: inline-block;
-}
-
-/* Link styles */
-.nav-link {
-    text-decoration: none;
-    font-size: 18px;
-    color: #333;
-    padding: 10px 15px;
-    transition: color 0.3s ease;
-}
-
-/* Active and hover states */
-.nav-link.active, .nav-link:hover {
-    color: #007bff;
-}
-
-#events {
-    background-color: rgb(56, 56, 56);
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    padding-bottom: 80px;
-    color: white;
-}
-
-h1 {
-    font-size: 2.5rem; /* Tamaño del título */
-    padding-top: 100px;
-    padding-bottom: 20px;
-    color: white;
-    text-align: center;
+    margin: 1rem;
     
-}
-
-.home {
-    color: white;
+  }
+  
+  .form-select {
     font-size: 1rem;
-    
-}
-
-.container-fluid{
-    display: flex; /* Usamos Flexbox para alinear los elementos en una misma línea */
-    gap: 2px;
-    align-items: center;
-    margin: 100px;
-    padding-left: 50px;
-    padding: 10px;
-    font-size: 2rem;
-    border: 50px solid #ccc; /* Borde que simula la caja */
-    background-color: #f9f9f9; /* Color de fondo de la "caja" */
-    border-radius: 10px; /* Bordes redondeados para el efecto de caja */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
-}
-
-select {
-    border-radius: 5px; /* Bordes redondeados para el efecto de caja */
-}
-
-.info-box {
-    display: none;
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f4f4f4;
-    align-items: center;
-    padding-left: 200px;
-    gap: 50px; /* Para espaciar elementos dentro del info-box */
-    margin: 55px; /* Espaciado general */
-    flex-direction: column;
-}
-.evento {
-    display: flex;
-    align-items: center; /* Alinea los elementos verticalmente */
-    justify-content: space-between; /* Espacio entre la imagen, el texto y el botón */
-    gap: 20px; /* Espacio entre los elementos internos del evento */
-    padding: 10px;
-    border: 1px solid #ddd;
+    padding: 0.5rem;
+    border: 1px solid #53afdd;
     border-radius: 5px;
-    background-color: #fff;
-}
-
-.evento img {
-    width: 200px; /* Ajusta el tamaño de la imagen */
-    height: auto;
-}
-
-.evento-texto {
+    background-color: #ffffff;
+    color: #023047;
+    transition: 0.3s;
+  }
+  
+  .form-select:hover {
+    border-color: #f5e505;
+  }
+  
+  /* Contenedor de información de eventos */
+  .info-box {
+    margin: 1.5rem 30px 0 30px;
+    padding: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-items:flex-start;
+  }
+  
+  /* Tarjeta de evento */
+  .evento {
+    width: 50%;
     display: flex;
-    flex-direction: column; /* Alinea el h3 y el p uno debajo del otro */
-    gap: 5px;
-}
-
-button{
-    background-color: #007bff; /* Color de fondo azul */
-    color: white; /* Color del texto blanco */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de fuente */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    transition: background-color 0.3s ease; /* Transición suave para el hover */
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer {
-    background-color: #1d7006; 
-    color: white; 
-    padding: 40px 0;
-
-    margin-top: 20px;
-}
-
-.footer .container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    padding: 0 50px; 
-
-}
-
-.footer-section {
-    flex: 1 1 200px; 
-    margin: 20px 0; 
-}
-
-.footer h4 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #0e6acc; 
-    padding-bottom: 5px;
-}
-
-.footer p, .footer ul {
-    font-size: 0.9rem; 
-    line-height: 1.6;
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer ul li {
-    margin-bottom: 10px;
-}
-
-.footer ul li a {
-    color: white;   
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer ul li a:hover {
-    color: #007bff; 
-}
-
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #444; 
-    font-size: 0.8rem;
-}
-
-.footer-bottom p {
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background-color: #656768;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s;
+  }
+  
+  .evento:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Imagen del evento */
+  #logevento {
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+  
+  /* Texto dentro de la tarjeta */
+  .evento-texto h3 {
     margin: 0;
-    color: #aaa;
-}
-
-.social-media {
-    display: flex;
-    gap: 15px; 
-}
-
-.social-media li {
-    list-style: none;
-}
-
-.social-media li a img {
-    width: 30px; 
-    transition: transform 0.3s ease;
-}
-
-.social-media li a img:hover {
-    transform: scale(1.2); 
-}
+    font-size: 1.1rem;
+    color: #eedf09;
+  }
+  
+  .evento-texto p {
+    margin: 0.5rem 0 0;
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  
+  /* Botón Detalles */
+  .evento button {
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #eedf09 ;
+    color: #000000 ;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .evento button:hover {
+    background-color: #fcf268;
+  }
+  
+  /* Responsivo */
+  @media (min-width: 768px) {
+    .evento {
+      max-width: 600px;
+    }
+  }
+  
