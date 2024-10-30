@@ -4,64 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transicion Energetica Sustentable</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/cursos.css">
   </head>
 
-  <header class="container">
-    <div class="header-content">
-      <ul class="nav">
-        <li class="nav-item">
-          <img src="Imagenes/Logo.png" alt="Soltech energy" width="220" />
-        </li>
-      </ul>
-
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="capacitacion.html">Centro Educativo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Recursos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="evento.html">Eventos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-      </ul>
-
-      <input type="text" id="buscar" placeholder="Buscar" />
-    </div>
-  </header>
-
   <body>
-    <div class="slider">
-      <ul>
-        <li>
-          <img src="Imagenes/Panel solar.jpg" />
-        </li>
-        <li>
-          <img src="Imagenes/PanelSolar.jpg" />
-        </li>
-        <li>
-          <img src="Imagenes/img-7.jpg" />
-        </li>
-        <li>
-          <img src="Imagenes/img-8.jpg" />
-        </li>
-      </ul>
-    </div>
 
-    <div>
-      <h3>Centro Educativo</h3>
-    </div>
+    <header class="container">
+      <div class="header-content">
+          <ul class="nav">
+              <li class="nav-item">
+                  <img src="Imagenes/Logo1.png" alt="Soltech energy" width="220">
+              </li>
+          </ul>
+          <ul class="nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="capacitacion.html">Centro Educativo</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Recursos</a></li>
+              <li class="nav-item"><a class="nav-link" href="evento.html">Eventos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          </ul>
+          <div class="search">
+            <input type="text" placeholder="Buscar...">
+            <button>🔍</button>
+          </div>
+      </div>
+    </header>
+    
+    
     <div class="container_capacitacion">
+      
       <div class="card">
         <figure>
           <img
@@ -70,7 +43,7 @@
           />
         </figure>
         <div class="contenido">
-          <h3>Introducción a la energía solar: Lección 1.</h3>
+          <h3>Introducción a la energía solar:</h3>
           <p><b>Lección 1: ¿Que es la energía solar?</b>Aquí encontrarás una descripción de lo que es la Energía Solar</p>
           <a href="Que_Es_Energia_Solar_L1.html">Eneterate de más</a>
         </div>
@@ -84,7 +57,7 @@
           />
         </figure>
         <div class="contenido">
-          <h3>Introducción a la energía solar: Lección 2.</h3>
+          <h3>Introducción a la energía solar:</h3>
           <p><b>Lección 2: Actualidad de la energía fotovoltaica.</b> <br>Encontraremos un poco de cuál es la actulidad de la energía fotovoltaica</p>
           <a href="Actualidad_Energia_Fotovoltaica_L2.html">Eneterate de más</a>
         </div>
@@ -98,67 +71,13 @@
           />
         </figure>
         <div class="contenido">
-          <h3>Introducción a la energía solar: Lección 3.</h3>
+          <h3>Introducción a la energía solar:</h3>
           <p><b>Lección 3: Tipos de instalaciones fotovoltaicas</b>Descripción de los diferentes tipos de instalaciones fotovoltaicas existentes.</p>
           <a href="Tipo_Instalaciones_Fotovoltaicas_L3.html">Eneterate de más</a>
         </div>
       </div>
     </div>
-
     
-    <!--Imagen que estaba incialmente de fondo-->
-    <!--<div class="container-fluid" id="fondoprincipal">
-        <div class="image-container">
-            <img class="img-fluid w-100 " src="Imagenes/PanelSolar.jpg" alt="Paneles Solares">
-        </div>
-        <div class="overlay">
-            <h1>¿Qué es la energía solar y qué beneficios tiene?</h1>
-            <p>Aprovechando al máximo la energía del Sol</p>
-        </div>
-
-    </div>-->
-
-    <!--Desde aca enmpiezo con carrusel de imagenes-->
-
-    <!-- <div class="slide">
-        <div class="slide-inner">
-            <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
-                checked="checked">
-            <div class="slide-item">
-                <img src="/Imagenes/PanelSolar.jpg">
-            </div>
-            <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
-            <div class="slide-item">
-                <img src="/Imagenes/img-8.jpg">
-            </div>
-            <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
-            <div class="slide-item">
-                <img src="/Imagenes/img-7.jpg">
-            </div>
-            <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
-            <div class="slide-item">
-                <img src="/Imagenes/img-9.jpg">
-            </div>
-            <label for="slide-3" class="slide-control prev control-1">‹</label>
-            <label for="slide-2" class="slide-control next control-1">›</label>
-            <label for="slide-1" class="slide-control prev control-2">‹</label>
-            <label for="slide-3" class="slide-control next control-2">›</label>
-            <label for="slide-2" class="slide-control prev control-3">‹</label>
-            <label for="slide-1" class="slide-control next control-3">›</label>
-            <ol class="slide-indicador">
-                <li>
-                    <label for="slide-1" class="slide-circulo">•</label>
-                </li>
-                <li>
-                    <label for="slide-2" class="slide-circulo">•</label>
-                </li>
-                <li>
-                    <label for="slide-3" class="slide-circulo">•</label>
-                </li>
-            </ol>
-        </div>
-    </div> -->
-
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
