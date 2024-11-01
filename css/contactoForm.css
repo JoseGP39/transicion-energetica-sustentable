@@ -1,0 +1,69 @@
+h1 {
+  text-align: center; /* centra el texto */
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+h1:hover {
+  color: rgb(91, 147, 250);
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Opcional: para organizar los elementos verticalmente */
+  justify-content: center;
+  width: 25rem;
+  min-height: 28rem;
+  margin: auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(209, 230, 233, 0.781);
+}
+
+/* Contenedor de los botones */
+.button-container {
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+}
+
+/* Botones individuales */
+button[type="button"] {
+  flex: 1; /* Hace que ambos botones ocupen el mismo ancho */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}

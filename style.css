@@ -1,0 +1,346 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/************************************************************CSS de la pagina de cursos - Jorge*/
+body{
+    width: 100%;
+    height: 100vh;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container_capacitacion{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    text-align: center;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 3%;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 210%;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: #2fb4cc;
+    color: #fff;
+}
+
+.video_capacitacion{
+    text-align: center;
+}
+/************************************************************ Hasta aca. CSS de la pagina de cursos - Jorge*/
+
+/* Flexbox-like behavior for header content */
+.header-content {
+    display: flex;
+    min-width: 100%; /* Agrego un ancho al Header*/
+    background-color: #fff;
+   /* justify-content: space-between;*/
+    align-items: center;
+    top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 20px;
+    position: fixed; /* Fijo el Header para que el contenido deslice por debajo*/
+    z-index: 1000;
+    border: solid 1px black;
+    height: ;
+}
+
+/* Navigation styles */
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual nav items */
+.nav-item {
+    display: inline-block;
+}
+
+/* Link styles */
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+#buscar{
+    margin-left: 12%;
+    
+}
+
+/* Active and hover states */
+.nav-link.active, .nav-link:hover {
+    color: #007bff;
+}
+
+/*Empiezo con cambios en esta area del body*/
+/*Estilos prueba dos */
+.slider {
+	width: 95%;
+    max-height: 420px; /*aplico una altura maxima*/
+	margin: auto;
+    padding-top: 50px;
+	overflow: hidden; /*con nesto evito que la imagen se desborde*/
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(200, 3, 250, 0.8); /*aplico una sombra con una opacidad*/
+}
+
+.slider ul {
+	display: flex; /*pongo los elementos flexibles dentro del contenedor en este caso los "li"*/
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 8s infinite alternate linear; /*aqui aplico una animacion de en tiempo de segundos*/
+}
+
+.slider li {
+	width: 100%;
+	list-style: none; /*quito los puntos a la lista*/
+}
+
+.slider img {
+	width: 100%; 
+    object-fit: cover; /*ajusto la imagen al contenedor sin que pierda propiedades*/
+}
+
+
+.overlay p {
+    font-size: 1.2rem; /* Tamaño del párrafo */
+}
+
+@keyframes cambio { /*Se utliza una animacion, especificando los cambios movendo el contenido en el eje horizontal*/
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/*Estilos para sección datos de interes*/
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    color: #3f3f9e; /* Color similar al de tu imagen */
+    margin: 20px 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.card {
+    flex-grow: 1;   /* Todas las tarjetas se expanden equitativamente */
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 100%; /* Asegúrate de que la tarjeta ocupe todo el espacio vertical */
+    
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.card-content {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.card p {
+    font-size: 0.9em;
+    margin: 5px 0 10px;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7b00ff; /* Color similar al del botón en tu imagen */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #5f308e;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.footer {
+    background-color: #1d7006; 
+    color: white; 
+    padding: 40px 0;
+
+    margin-top: 20px;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 0 50px; 
+
+}
+
+.footer-section {
+    flex: 1 1 200px; 
+    margin: 20px 0; 
+}
+
+.footer h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0e6acc; 
+    padding-bottom: 5px;
+}
+
+.footer p, .footer ul {
+    font-size: 0.9rem; 
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;   
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #007bff; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444; 
+    font-size: 0.8rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #aaa;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px; 
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.social-media li a img {
+    width: 30px; 
+    transition: transform 0.3s ease;
+}
+
+.social-media li a img:hover {
+    transform: scale(1.2); 
+}
