@@ -47,7 +47,7 @@
 /*Estilos para sección datos de interes*/
 .section-title {
     text-align: center;
-    font-size: 2em;
+    font-size: 48px;
     color: #206405; /* Color similar al de tu imagen */
     margin: 30px 0;
 }
@@ -96,11 +96,13 @@
 
 .card h3 {
     margin: 0;
-    font-size: 1.2em;
+   /* font-size: 1.2em;*/
+    font-size: 23px;/*Jorge*/
 }
 
 .card p {
-    font-size: 0.9em;
+    /*font-size: 0.9em;*/
+    font-size: 18px; /*Jorge*/
     margin: 5px 0 10px;
 }
 

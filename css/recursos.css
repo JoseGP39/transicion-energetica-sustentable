@@ -1,0 +1,21 @@
+.container{
+    text-align: center;
+   /* margin-top: 100px;*/
+    color: #023047;
+    /*margin-bottom: 1.5rem;*/
+}
+
+/*Estilos para sección datos de interes*/
+.section-title {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 48px;
+    color: #206405; /* Color similar al de tu imagen */
+    /*margin: 30px 0;*/
+}
+
+.parrafo p {
+    /*font-size: 0.9em;*/
+    font-size: 18px; /*Jorge*/
+    margin: 5px 0 10px;
+}

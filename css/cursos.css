@@ -13,7 +13,7 @@
   
   /* Estilos para los títulos */
   .container_capacitacion{
-    text-align: center;
+    text-align: left;
     color: #023047;
     margin-bottom: 1.5rem;
   }
@@ -42,6 +42,21 @@
     width: 100%;
     height: auto;
   }
+
+  .card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2eec08; /* Color similar al del botón en tu imagen */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #206405;
+}
   
   /* Contenido de la tarjeta */
   .contenido {
@@ -50,12 +65,12 @@
   
   .contenido h3 {
     color: #53afdd;
-    font-size: 1.2rem;
+    font-size: 23px;/*Jorge*/
     margin-bottom: 1rem;
   }
   
   .contenido p {
-    font-size: 1rem;
+    font-size: 18px; /*Jorge*/
     color: #ffffff;
     margin-bottom: 1rem;
   }
@@ -76,4 +91,15 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  /* Botones y elementos de acento */
+.btn {
+  background-color: var(--color-bright-yellow);
+  color: var(--color-dark-blue);
+}
+
+.btn:hover {
+  background-color: var(--color-dark-white);
+  color: var(--color-light-blue);
+}
   
