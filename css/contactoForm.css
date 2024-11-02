@@ -1,0 +1,91 @@
+#contacto-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+h1 {
+  text-align: center; /* centra el texto */
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  margin-top: 7rem;
+  text-align: center;
+}
+h1:hover {
+  color: rgb(91, 147, 250);
+}
+#formContacto {
+  width: 25rem;
+  min-height: 28rem;
+  margin: auto;
+  margin-top: 15px;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#formContacto input[type="text"],
+#formContacto input[type="email"],
+#formContacto input[type="tel"],
+#formContacto input[type="number"],
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(209, 230, 233, 0.781);
+}
+
+#formContacto input[type="text"]:focus,
+#formContacto input[type="email"]:focus,
+#formContacto input[type="tel"]:focus,
+#formContacto input[type="number"]:focus,
+#formContacto textarea:focus {
+  border: 2px solid #4a90e2; /* Cambia el color del borde */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Sombra al hacer foco */
+  outline: none;
+}
+
+/* Contenedor de los botones */
+.button-container {
+  display: flex;
+  gap: 5px; /* Espacio entre los botones */
+}
+
+/* Botones individuales */
+button[type="button"] {
+  flex: 1; /* Hace que ambos botones ocupen el mismo ancho */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+ /*Estilos para el mensaje de agradecimiento*/
+ #mensajeAgradecimiento {
+  color: green;
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+}
