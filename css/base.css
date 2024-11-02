@@ -39,7 +39,8 @@ body{
 /* Header */
 .header-content {
     background-color: var(--color-white);
-    min-width: 50%; /* Agrego un ancho al Header*/
+    /*min-width: 100%;  Agrego un ancho al Header*/
+    width: 95%;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -50,6 +51,8 @@ body{
     position: fixed; /* Fijo el Header para que el contenido deslice por debajo*/
     z-index: 100;
     border-radius: 5px;
+    left: 0; /* Centrar en pantallas pequeñas */
+    right: 0; /* Alineación responsiva */
 }
 
 
@@ -114,7 +117,68 @@ body{
     color: var(--color-light-blue);
 }
 
- /* Responsive */
+
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 768px) {
+    .header-content {
+        min-width: 80%; /* Ajuste de tamaño en pantallas medianas */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav {
+        gap: 15px; /* Ajuste del espacio entre enlaces */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Ajuste del tamaño de fuente */
+        margin: 10px 15px;
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1024px) {
+    .header-content {
+        min-width: 60%; /* Reducción del tamaño en pantallas grandes */
+        padding: 1rem 2rem;
+    }
+
+    .nav {
+        gap: 20px; /* Más espacio entre enlaces */
+    }
+
+    .nav-link {
+        font-size: 18px; /* Tamaño de fuente más grande */
+        margin: 10px 20px;
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    .header-content {
+        flex-direction: column; /* Header apilado */
+        height: auto;
+        padding: 1rem;
+    }
+
+    .nav {
+        flex-direction: column; /* Apila elementos del menú */
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 14px; /* Tamaño de fuente menor */
+        margin: 5px 0;
+    }
+
+    .search {
+        margin-top: 10px; /* Espacio entre la barra de búsqueda y el menú */
+    }
+}
+
+/*   CODIGO DE YULI
+ Responsive 
  @media screen and (max-width: 968px) {
     .menu-toggle {
         display: flex;
@@ -170,7 +234,7 @@ body{
     }
 }
 
-
+*/
 .footer {
     background-color: var(--color-white); 
     color: var(--color-blue); 
@@ -246,6 +310,8 @@ body{
 .social-media li a img:hover {
     transform: scale(1.2); 
 }
+
+
 
 
 
