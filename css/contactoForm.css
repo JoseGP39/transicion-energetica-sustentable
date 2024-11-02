@@ -1,22 +1,24 @@
+#contacto-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
 h1 {
   text-align: center; /* centra el texto */
   color: rgb(0, 0, 0);
-  font-size: 2rem;
-  margin-top: 8rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-top: 7rem;
   text-align: center;
 }
 h1:hover {
   color: rgb(91, 147, 250);
 }
-
-form {
-  display: flex;
-  flex-direction: column; /* Opcional: para organizar los elementos verticalmente */
-  justify-content: center;
+#formContacto {
   width: 25rem;
   min-height: 28rem;
   margin: auto;
+  margin-top: 15px;
   padding: 1.5rem;
   background-color: white;
   border-radius: 1rem;
@@ -28,7 +30,10 @@ label {
   margin-bottom: 1rem;
 }
 
-input,
+#formContacto input[type="text"],
+#formContacto input[type="email"],
+#formContacto input[type="tel"],
+#formContacto input[type="number"],
 textarea {
   width: 100%;
   padding: 1rem;
@@ -38,10 +43,20 @@ textarea {
   box-shadow: 0 0 5px rgba(209, 230, 233, 0.781);
 }
 
+#formContacto input[type="text"]:focus,
+#formContacto input[type="email"]:focus,
+#formContacto input[type="tel"]:focus,
+#formContacto input[type="number"]:focus,
+#formContacto textarea:focus {
+  border: 2px solid #4a90e2; /* Cambia el color del borde */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Sombra al hacer foco */
+  outline: none;
+}
+
 /* Contenedor de los botones */
 .button-container {
   display: flex;
-  gap: 10px; /* Espacio entre los botones */
+  gap: 5px; /* Espacio entre los botones */
 }
 
 /* Botones individuales */
@@ -66,4 +81,11 @@ button {
 
 button:hover {
   background-color: #3e8e41;
+}
+ /*Estilos para el mensaje de agradecimiento*/
+ #mensajeAgradecimiento {
+  color: green;
+  display: none;
+  text-align: center;
+  margin-top: 10px;
 }

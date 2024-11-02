@@ -94,8 +94,7 @@ body{
     margin-bottom: 20px;
     position: fixed; /* Fijo el Header para que el contenido deslice por debajo*/
     z-index: 1000;
-    border: solid 1px black;
-    height: ;
+    height: 100px;
 }
 
 /* Navigation styles */
