@@ -8,21 +8,29 @@ function enviarFormulario() {
   const mensaje = document.getElementById("mensaje").value.trim();
 
   const mensajeError = document.getElementById("mensajeError"); // Nos aseguramos de obtener el elemento con ID "mensajeError"
-  const mensajeAgradecimiento = document.getElementById("mensajeAgradecimiento");
+  const mensajeAgradecimiento = document.getElementById(
+    "mensajeAgradecimiento"
+  );
 
   // Ocultar mensajes previos
   mensajeError.style.display = "none";
   mensajeAgradecimiento.style.display = "none";
 
   // Validar que todos los campos estén completos
-  if (nombre === "" || apellido === "" || email === "" || telefono === "" || mensaje === "") {
-      mensajeError.style.display = "block";
-      mensajeError.textContent = "Por favor, completa todos los campos.";
+  if (
+    nombre === "" ||
+    apellido === "" ||
+    email === "" ||
+    telefono === "" ||
+    mensaje === ""
+  ) {
+    mensajeError.style.display = "block";
+    mensajeError.textContent = "Por favor, completa todos los campos.";
   } else {
-      // Mostrar mensaje de agradecimiento y ocultar mensaje de error
-      mensajeAgradecimiento.style.display = "block";
-      mensajeAgradecimiento.textContent = "Gracias por contactarnos.";
-      mensajeError.style.display = "none";
+    // Mostrar mensaje de agradecimiento y ocultar mensaje de error
+    mensajeAgradecimiento.style.display = "block";
+    mensajeAgradecimiento.textContent = "Gracias por contactarnos.";
+    mensajeError.style.display = "none";
   }
 }
 
