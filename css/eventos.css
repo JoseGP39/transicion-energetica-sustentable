@@ -77,7 +77,8 @@
   }
   
   /* Botón Detalles */
-  .evento button {
+
+  #button {
     margin-left: auto;
     padding: 0.5rem 1rem;
     border: none;
@@ -89,9 +90,10 @@
     transition: background-color 0.3s;
   }
   
-  .evento button:hover {
+  #button:hover {
     background-color: #fcf268;
   }
+  
   
   /* Responsivo */
   @media (min-width: 768px) {
