@@ -2,97 +2,122 @@
 
 /* Contenedor principal */
 .container_capacitacion {
-    margin-top: 150px;
-    margin: 150px 30px 30px 30px;
-    border-radius: 5px;
-    display: grid;
-    gap: 1.5rem;
-    padding: 2rem;
-    background-color: #ffffff;
-  }
-  
-  /* Estilos para los títulos */
-  .container_capacitacion{
-    text-align: left;
-    color: #023047;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* Estilos de la tarjeta */
-  .card {
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    background-color: #000000;
-  }
-  
-  /* Efecto al pasar el ratón */
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Imagen dentro de la tarjeta */
-  .card figure {
-    margin: 0;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-  }
+  /*margin-top: 150px;*/
+  margin: 30px 45px 30px 45px;
+  border-radius: 5px;
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #ffffff;
+}
 
-  .card .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2eec08; /* Color similar al del botón en tu imagen */
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: left;
-    transition: background-color 0.3s ease;
+/* Estilos para los títulos */
+.container_capacitacion {
+  text-align: left;
+  color: #023047;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos de la tarjeta */
+.card {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #000000;
+}
+
+/* Efecto al pasar el ratón */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen dentro de la tarjeta */
+.card figure {
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2eec08;
+  /* Color similar al del botón en tu imagen */
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: left;
+  transition: background-color 0.3s ease;
 }
 
 .card .btn:hover {
-    background-color: #206405;
+  background-color: #206405;
 }
-  
-  /* Contenido de la tarjeta */
-  .contenido {
-    padding: 2rem;
-  }
-  
-  .contenido h3 {
-    color: #53afdd;
-    font-size: 23px;/*Jorge*/
-    margin-bottom: 1rem;
-  }
-  
-  .contenido p {
-    font-size: 18px; /*Jorge*/
-    color: #ffffff;
-    margin-bottom: 1rem;
-  }
-  
-  .contenido a {
-    text-decoration: none;
-    color: #2eec08;
-    font-weight: bold;
-  }
-  
-  .contenido a:hover {
-    color: #ffb703;
-  }
-  
-  /* Responsive: columnas para pantallas grandes */
-  @media (min-width: 768px) {
-    .container_capacitacion {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
 
-  /* Botones y elementos de acento */
+/* Contenido de la tarjeta */
+.contenido {
+  padding: 2rem;
+}
+
+.contenido h3 {
+  color: #53afdd;
+  font-size: 23px;
+  /*Jorge*/
+  margin-bottom: 1rem;
+}
+
+.contenido p {
+  font-size: 18px;
+  /*Jorge*/
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.contenido a {
+  text-decoration: none;
+  color: #2eec08;
+  font-weight: bold;
+}
+
+.contenido a:hover {
+  color: #ffb703;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 48px;
+  color: #206405;
+  margin-top: 160px;
+  margin-bottom: 2  0px;
+
+}
+
+.texto {
+  font-size: 18px;
+  color: var(--color-black);
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.texto ul{
+  list-style-type:disc;
+  padding-left: 20px;
+}
+
+/* Responsive: columnas para pantallas grandes */
+@media (min-width: 768px) {
+  .container_capacitacion {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Botones y elementos de acento */
 .btn {
   background-color: var(--color-bright-yellow);
   color: var(--color-dark-blue);
@@ -102,4 +127,3 @@
   background-color: var(--color-dark-white);
   color: var(--color-light-blue);
 }
-  

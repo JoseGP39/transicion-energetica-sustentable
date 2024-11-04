@@ -4,13 +4,26 @@
   align-items: center;
   margin-top: 10px;
 }
-h1 {
-  text-align: center; /* centra el texto */
+/*h1 {
+  text-align: center; /* centra el texto 
   color: rgb(0, 0, 0);
   font-size: 1.5rem;
   margin-top: 7rem;
   text-align: center;
+}*/
+
+.section-title {
+  text-align: center;
+  font-size: 48px;
+  color: #206405;
+  margin-top: 160px;
+  margin-bottom: 2 0px;
+  text-align: center;
+
 }
+
+
+
 h1:hover {
   color: rgb(91, 147, 250);
 }
