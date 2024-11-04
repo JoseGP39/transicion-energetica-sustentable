@@ -1,40 +1,51 @@
 .slider {
   width: 95%;
-  max-height: 400px; /*aplico una altura maxima*/
+  max-height: 400px;
+  /*aplico una altura maxima*/
   margin: auto;
-  margin-top: 150px; /*Agrego un margen para que el slider tenga un espacio de margen arriba*/
-  overflow: hidden; /*con nesto evito que la imagen se desborde*/
+  margin-top: 150px;
+  /*Agrego un margen para que el slider tenga un espacio de margen arriba*/
+  overflow: hidden;
+  /*con nesto evito que la imagen se desborde*/
   border-radius: 5px;
-  box-shadow: 0 0 20px rgba(243, 241, 243, 0.8); /*aplico una sombra con una opacidad*/
+  box-shadow: 0 0 20px rgba(243, 241, 243, 0.8);
+  /*aplico una sombra con una opacidad*/
 }
 
 .slider ul {
-  display: flex; /*pongo los elementos flexibles dentro del contenedor en este caso los "li"*/
+  display: flex;
+  /*pongo los elementos flexibles dentro del contenedor en este caso los "li"*/
   padding: 0;
   width: 400%;
 
-  animation: cambio 8s infinite alternate linear; /*aqui aplico una animacion de en tiempo de segundos*/
+  animation: cambio 8s infinite alternate linear;
+  /*aqui aplico una animacion de en tiempo de segundos*/
 }
 
 .slider li {
   width: 100%;
-  list-style: none; /*quito los puntos a la lista*/
+  list-style: none;
+  /*quito los puntos a la lista*/
 }
 
 .slider img {
   width: 100%;
-  object-fit: cover; /*ajusto la imagen al contenedor sin que pierda propiedades*/
+  object-fit: cover;
+  /*ajusto la imagen al contenedor sin que pierda propiedades*/
 }
 
 .overlay p {
-  font-size: 1.2rem; /* Tamaño del párrafo */
+  font-size: 1.2rem;
+  /* Tamaño del párrafo */
 }
 
 @keyframes cambio {
+
   /*Se utliza una animacion, especificando los cambios movendo el contenido en el eje horizontal*/
   0% {
     margin-left: 0;
   }
+
   20% {
     margin-left: 0;
   }
@@ -42,6 +53,7 @@
   25% {
     margin-left: -100%;
   }
+
   45% {
     margin-left: -100%;
   }
@@ -49,6 +61,7 @@
   50% {
     margin-left: -200%;
   }
+
   70% {
     margin-left: -200%;
   }
@@ -56,6 +69,7 @@
   75% {
     margin-left: -300%;
   }
+
   100% {
     margin-left: -300%;
   }
@@ -63,13 +77,15 @@
 
 /*Estilos para sección datos de interes*/
 .section-title {
-    text-align: center;
-    font-size: 48px;
-    color: #206405; /* Color similar al de tu imagen */
-    margin: 30px 0;
   text-align: center;
-  font-size: 2em;
-  color: #206405; /* Color similar al de tu imagen */
+  font-size: 48px;
+  color: #206405;
+  /* Color similar al de tu imagen */
+  margin: 30px 0;
+  text-align: center;
+ /* font-size: 2em;*/
+  color: #206405;
+  /* Color similar al de tu imagen */
   margin: 30px 0;
 }
 
@@ -83,14 +99,16 @@
 }
 
 .card {
-  flex-grow: 1; /* Todas las tarjetas se expanden equitativamente */
+  flex-grow: 1;
+  /* Todas las tarjetas se expanden equitativamente */
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
   width: 350px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  height: 100%; /* Asegúrate de que la tarjeta ocupe todo el espacio vertical */
+  height: 100%;
+  /* Asegúrate de que la tarjeta ocupe todo el espacio vertical */
 }
 
 .card img {
@@ -114,17 +132,19 @@
 }
 
 .card h3 {
-    margin: 0;
-   /* font-size: 1.2em;*/
-    font-size: 23px;/*Jorge*/
+  margin: 0;
+  /* font-size: 1.2em;*/
+  font-size: 23px;
+  /*Jorge*/
   margin: 0;
   font-size: 1.2em;
 }
 
 .card p {
-    /*font-size: 0.9em;*/
-    font-size: 18px; /*Jorge*/
-    margin: 5px 0 10px;
+  /*font-size: 0.9em;*/
+  font-size: 18px;
+  /*Jorge*/
+  margin: 5px 0 10px;
   font-size: 0.9em;
   margin: 5px 0 10px;
 }
@@ -132,7 +152,8 @@
 .card .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #2eec08; /* Color similar al del botón en tu imagen */
+  background-color: #2eec08;
+  /* Color similar al del botón en tu imagen */
   color: white;
   text-decoration: none;
   border-radius: 10px;
