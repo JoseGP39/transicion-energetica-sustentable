@@ -109,8 +109,13 @@
   position: relative;
   height: 100%;
   /* Asegúrate de que la tarjeta ocupe todo el espacio vertical */
+  transition: transform 0.3s ease; /* Añade una transición suave */
 }
 
+.card:hover {
+  transform: translateY(-10px); /* Animación para mover la tarjeta hacia arriba */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Se agrega una nueva sombra */
+}
 .card img {
   width: 100%;
   height: auto;
